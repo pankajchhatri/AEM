@@ -1,0 +1,27 @@
+<center data-sly-use.search="search-wcm.js">
+    <form action="${currentPage.path}.html">
+   		 <input size="41" maxlength="2048" name="q" value="${search.queryString}" />
+	 	 <input value="${search.searchButton}" type="submit" />
+	</form>
+</center>
+
+<br />
+
+<!--/* Displays the results for this page */-->
+<div class="searchresult" data-sly-list="${search.hits}">
+	<a href="${item.uRL}">${item.title}</a>
+    <br/>
+</div>
+<div class="searchresult" data-sly-test="${!search.hits}">${search.noResults}</div>
+
+<br/><br/>
+
+<!--/* Displays the page links on the bottom of the component */-->
+<a data-sly-test="${search.prevPage}" href="${search.prevPage.uRL || '#'}">${search.previousText}</a>
+
+<div data-sly-list.resultPage="${search.resultPages}" data-sly-unwrap>
+	<div data-sly-test.curPage="${resultPage.isCurrentPage}" data-sly-unwrap>${resultPageList.count}</div>
+	<a data-sly-test="${!curPage}" href="${resultPage.uRL}">${resultPageList.count}</a>
+</div>
+
+<a data-sly-test="${search.nextPage}" href="${search.nextPage.uRL || '#'}">${search.nextText}</a>

@@ -1,0 +1,10 @@
+<!-- /* Basic mock up code */ -->
+<nav class="navbar navbar-inverse navbar-absolute-top">
+    
+    <ul class="nav navbar-nav navbar-center">
+        <li class="nav navbar-nav navbar-left" data-sly-repeat="${currentPage.listChildren}">
+            <a href="${item.path}.html">${item.title}</a>
+        </li>
+    </ul>
+    
+</nav>

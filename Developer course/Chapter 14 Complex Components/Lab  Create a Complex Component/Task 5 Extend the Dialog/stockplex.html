@@ -1,0 +1,35 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" data-sly-call="${clientlib.all @ categories='apps.training.stockplex'}" />
+
+<div id="stockplex" data-sly-use.stock="stockplex.js" class="${stock.cssClass}" data-emptytext="StockPlex Component" >
+    <div data-sly-test="${stock.symbol}">
+        <table id="stockPrice">
+            <tr>
+                <h1 id="symbol" scope="row" width="48%">${stock.symbol}</h1>
+                <h1 id="currentPrice">Current Value: ${stock.currentPrice}</h1>
+            </tr>
+        </table>
+	 	
+        <div id="summary">
+            <h3>Summary: </h3>
+            <p>${stock.summary}</p>
+        </div>
+        
+        <div id="download" data-sly-test="${stock.downloadButton}">
+            <a href="${'http://real-chart.finance.yahoo.com/table.csv?d=3&e=20&f=2016&g=d&a=7&b=14&c=1986&ignore=.csv&s={0}' @ format=stock.symbol, context='uri'}"><Button>Download Stock History</Button></a>
+        </div>
+        
+        <div id="values" data-sly-list="${stock.items}">
+            <table id="items">
+                <tbody>
+                    <tr>
+                        <th >${item[0]}</th>
+                        <td >${item[1]}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+       	
+       	
+    </div>
+</div>
+

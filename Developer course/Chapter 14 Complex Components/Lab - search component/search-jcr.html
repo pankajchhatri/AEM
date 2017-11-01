@@ -1,0 +1,12 @@
+<center data-sly-use.search="search-jcr.js">
+    <form action="${currentPage.path}.html">
+    <input name="q" value="${search.queryString}" />
+	   <input value="Search" type="submit" />
+	</form>
+</center>
+<br />
+
+<div class="searchresult" data-sly-list="${search.query}">
+	<a href="${item.path}.html">${item.title}</a>
+</div>
+<div class="searchresult" data-sly-test="${!search.query}">No results found ... Please try again ...</div>

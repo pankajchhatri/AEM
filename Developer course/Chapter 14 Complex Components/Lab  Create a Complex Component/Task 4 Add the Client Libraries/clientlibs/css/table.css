@@ -1,0 +1,129 @@
+#stockplex {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+#stockplex h1 {
+	font-family: Verdana, Geneva, sans-serif;
+	
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+    float: left;
+}
+#stockplex h3 {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 20px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 700;
+	line-height: 15.4px;
+}
+#stockplex p {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
+}
+
+#items {
+    border-collapse: collapse;
+    width:  100%;    
+    border-bottom: 1px solid #ddd;
+}
+
+#items td, th {
+	text-align:center;
+    font-size: 20px;
+    
+}
+
+#items tr:nth-child(even){
+    background-color: #d0d1cf
+}
+
+#items tr:hover  {
+    background-color: #ddd;
+}
+
+#items th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #3b3b3a;
+    color: white;
+    border: 1px solid #ddd;
+    padding: 8px;
+    width: 48%;
+    
+}
+
+#symbol {
+    text-transform: uppercase;
+    width: 50%;
+    font-size: 50px;
+}
+#currentPrice {
+    line-height: 18px;
+    width: 50%;
+    font-size: 24px;
+}
+#summary {
+    width: 75%;
+    float: left;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    vertical-align: middle;
+    
+}
+#download {
+    width: 25%;
+    float: left;
+}
+@media (min-width: 651px) {
+    #download button {
+        background-color: #ed1c24;
+        /* Green */
+        border: none;
+        color: white;
+        padding: 15px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        font-weight: 700;
+    }
+}
+
+@media (max-width: 650px) {
+    #download button {
+        background-color: #ed1c24;
+        /* Green */
+        border: none;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        font-weight: 700;
+    }
+}
+
+/*Step 5: Hover Styles*/
+#download button:hover {
+ background: #c81017;
+}
+
+#stockPrice {
+    width: 100%;
+    background: #3b3b3a  no-repeat scroll center;
+    margin-left: 10px;
+    margin-right: 10px;
+    width:100%;
+    height: 5px;
+}
