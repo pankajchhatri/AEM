@@ -1,4 +1,4 @@
-package apps.training.components.structure.site_topnav;
+package apps.training.components.content.site_topnav;
 
 import java.util.*;
 import java.util.Iterator;
