@@ -1,0 +1,8 @@
+<div data-sly-use.multi="touchmulti.js">
+
+<ul data-sly-list.links="${multi.linksList}">
+
+    <li>  <a href="${links.path}.html">${links.title}</a> </li>
+    
+</ul>
+<div>
