@@ -1,23 +1,18 @@
 use( function () {
 
-    var menuList = [];
-    var menuArray = properties.get("tabMenu");
-    if(menuArray != null){
-
-        for(var i = 0; i < menuArray.length; i++) {
+    var linksList = [];
+    var linkArray = properties.get("linkMultifield");
+    if(linkArray != null){
+        for(var i = 0; i < linkArray.length; i++) {
         var singleObj = {};
-        var itemObject =  JSON.parse(menuArray[i]);
-        singleObj['title'] = itemObject.title;
-        singleObj['path'] = itemObject.path;
-        singleObj['icon'] = itemObject.icon;
-        singleObj['icon2'] = itemObject.icon2;
-        singleObj['alttext'] = itemObject.alttext;
-        singleObj['titletext'] = itemObject.titletext;
-        menuList.push(singleObj);
+        var itemObject =  JSON.parse(linkArray[i]);
+        singleObj['title'] = itemObject.linktitle;
+        singleObj['path'] = itemObject.linkpath;
+        linksList.push(singleObj);
     };
     }
 
    return {
-        menuList: menuList
+        linksList: linksList
     };
 });
