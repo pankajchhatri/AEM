@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+    
+    <sly data-sly-include="/libs/wcm/core/components/init/init.jsp" />
+
+    <div data-sly-resource="${'par' @ resourceType='foundation/components/parsys'}"></div>
+
+    </body>
+</html>
