@@ -264,7 +264,7 @@ under the License.
  
                     <name>Nexus Proxy Repository</name>
  
-                    <url>http://repo.adobe.com/nexus/content/groups/public/</url>
+                    <url>https://repo.adobe.com/nexus/content/groups/public/</url>
  
                     <layout>default</layout>
  
@@ -280,7 +280,7 @@ under the License.
  
                     <name>Nexus Proxy Repository</name>
  
-                    <url>http://repo.adobe.com/nexus/content/groups/public/</url>
+                    <url>https://repo.adobe.com/nexus/content/groups/public/</url>
  
                     <layout>default</layout>
  
