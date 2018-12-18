@@ -1,0 +1,15 @@
+$(window).adaptTo("foundation-registry").register("foundation.validation.validator", {
+  selector: "[data-must-contain]",
+  validate: function(el) {
+    var mustContain = el.getAttribute("data-must-contain");
+
+    console.log('validating text contains pluralsight');
+    console.log('input must contain ' + mustContain);
+
+    var input = el.value;
+
+    if (input.indexOf(mustContain) === -1 ) {
+      return "The field must contain " + mustContain + ". It current value is " + el.value + ".";
+    }
+  }
+});
