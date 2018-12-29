@@ -7,11 +7,11 @@
  *
  * 2. Add cq-dialog-checkbox-showhide-target data-attribute to checkbox with the value being the selector to target for toggleing
  *
- *		Example: cq-dialog-checkbox-showhide-target=".togglefields"
+ *		Example: cq-dialog-checkbox-showhide-target=".togglefield"
  *
  * 3. Add target class to toggleable fields or components
  *
- *	    Example: granite:class="togglefields"
+ *	    Example: granite:class="togglefield"
  */
 (function (document, $) {
     "use strict";
