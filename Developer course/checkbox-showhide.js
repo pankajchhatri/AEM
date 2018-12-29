@@ -1,8 +1,4 @@
 /**
-
- *   @Author - Tyler Maynard
- *  Based off of AEM's dropdownshowhide client library
-
  * How to use:
  *
  * - Add class to checkbox
