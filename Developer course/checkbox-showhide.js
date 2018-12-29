@@ -1,17 +1,17 @@
 /**
  * How to use:
  *
- * - Add class to checkbox
+ * 1. Add class to checkbox
  *
  *		Example: granite:class="cq-dialog-checkbox-showhide"
  *
- * - Add data-attribute to checkbox with the value being the selector to target for toggleing
+ * 2. Add cq-dialog-checkbox-showhide-target data-attribute to checkbox with the value being the selector to target for toggleing
  *
- *		Example: cq-dialog-checkbox-showhide-target=".toggle-target"
+ *		Example: cq-dialog-checkbox-showhide-target=".togglefields"
  *
- * - Add target class to toggleable fields or components
+ * 3. Add target class to toggleable fields or components
  *
- *	    Example: granite:class="toggle-target"
+ *	    Example: granite:class="togglefields"
  */
 (function (document, $) {
     "use strict";
