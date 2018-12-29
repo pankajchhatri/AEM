@@ -10,13 +10,13 @@ import org.apache.sling.api.servlets.SlingSafeMethodsServlet;
 import org.osgi.service.component.annotations.Component;
 
 
-//@SlingServlet(paths="/bin/trainingproject/titleservlet")  --Felix SCR Annotation
+//@SlingServlet(paths="/bin/trainingproject/testservlet")  --Felix SCR Annotation
 
 //OSGI Declarative Service Annotation
 @Component(
 		service=Servlet.class,
 		property={
-				"sling.servlet.paths="+ "/bin/trainingproject/titleservlet"
+				"sling.servlet.paths="+ "/bin/trainingproject/testservlet"
 		}
 )
 
